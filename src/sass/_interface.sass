@@ -1,0 +1,38 @@
+*
+	box-sizing: border-box
+body
+	color: $text-color
+img
+	max-width: 100%
+.container
+	width: 1170px
+	margin: auto
+@media (max-width: 1200px)
+	.container
+		width: 950px
+@media (max-width: 992px)
+  .container
+    max-width: 726px
+    width: 96%
+@media (max-width: 768px)
+  .container
+    max-width: 528px
+    width: 96%
+@media (max-width: 567px)
+  .container
+    max-width: 390px
+    width: 96%
+@media (max-width: 420px)
+  .container
+    max-width: 290px
+    width: 96%	
+.button
+	background-color: $main-color
+	color: $text-color
+	border: none
+	padding: 10px 15px 
+	font-size: 15px
+	&:active
+		outline: none
+	&:focus
+		outline: none
