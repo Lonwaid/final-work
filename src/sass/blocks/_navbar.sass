@@ -1,8 +1,14 @@
 .navbar
+	background-image: url('../img/navbar/navbar_bg.jpg')
+	background-size: 40.6%
+	background-position: right center
+	background-repeat: repeat-y
 	&-block
+		min-height: 81px
 		display: flex
 		justify-content: space-between
 		align-items: center
+
 	&__link
 		display: block
 		width: 50px
@@ -10,18 +16,44 @@
 	&-menu
 		display: flex
 		justify-content: space-between
-		flex-basis: 50%
+		flex-basis: 50.4%
 		list-style: none
 		padding: 0
+		padding-left: 20px
+		padding-bottom: 4px
 		&__link
 			font-size: 16px
 			text-decoration: none
+
 		&__item
-			
+			padding: 0 27px
+			border-left: 1px solid rgba(0, 0, 0, 0.15)
+		&__item:first-child	
+			border: none
+	&__tel-link
+		margin-left: 5px
+		margin-bottom: 2px
+		text-decoration: none
+		font-size: 18px
+		+bold
+		color: $text-color
 	&__logo
+		padding-top: 2px
 		&-title
 			margin: 0
 			font-size: 15px
 			text-transform: uppercase
+	&__button
+		font-size: 14px
 	&-contacts
-		flex-basis: 30%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-basis: 30.4%
+		
+.contacts
+	&-block
+		display: flex
+	&__image
+		display: block
+
