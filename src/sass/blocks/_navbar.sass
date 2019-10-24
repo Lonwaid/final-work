@@ -4,11 +4,13 @@
 	background-position: right center
 	background-repeat: repeat-y
 	&-block
+		position: relative
 		min-height: 81px
 		display: flex
 		justify-content: space-between
 		align-items: center
-
+	&-burger
+		display: none
 	&__link
 		display: block
 		width: 50px
@@ -24,7 +26,7 @@
 		&__link
 			font-size: 16px
 			text-decoration: none
-
+			color: $text-color
 		&__item
 			padding: 0 27px
 			border-left: 1px solid rgba(0, 0, 0, 0.15)
@@ -50,10 +52,108 @@
 		justify-content: space-between
 		align-items: center
 		flex-basis: 30.4%
-		
+.burger
+	&-button	
+		padding: 0
+		border: 0
+		font-size: 0px
+		&:active
+			outline: none
+		&:focus
+			outline: none
+	&-menu
+		padding: 16px 10px 16px 0
+		margin: 0
+		background-color: #ffffff
+		list-style: none
+		&__wrapper
+			position: absolute
+			top: 0
+			left: 0
+			display: none
+
 .contacts
 	&-block
 		display: flex
 	&__image
 		display: block
-
+@media (max-width: 1200px)
+	.navbar
+		&-contacts
+			flex-basis: 35.4%
+		&-menu
+			padding-left: 0
+			&__item
+				padding: 0 20px
+@media (max-width: 992px)
+	.navbar
+		background-size: 51.6%
+		&__logo
+			margin-left: -50px
+			&_margin
+				margin-left: 180px
+		&-burger
+			display: block
+		&-contacts
+			flex-basis: 47.4%
+		&-menu
+			display: none	
+			&__item
+				padding: 0
+				border: 1px solid rgba(0, 0, 0, 0.15)
+			&__item:first-child	
+				border: 1px solid rgba(0, 0, 0, 0.15)
+			&__link
+				display: inline-block
+				padding: 16px 45px 
+	.burger
+		&-button
+			&_dissabled
+				display: none
+			&__close
+				margin-top: 16px
+				padding: 0
+				border: 0
+				font-size: 0px
+				&:active
+					outline: none
+				&:focus
+					outline: none
+		&-menu
+			&__wrapper
+				&_enabled
+					display: flex
+					align-items: flex-start
+@media (max-width: 768px)
+	.navbar
+		background-size: 61.6%
+		&__logo
+			margin-left: -16px
+		&-contacts
+			flex-basis: 60.4%		
+		&__tel-link
+			font-size: 16px
+@media (max-width: 567px)
+	.navbar
+		background-size: 49.6%
+		&__logo
+			margin-left: -39px
+		&-contacts
+			flex-basis: 35.5%
+		&-menu
+			&__link
+				padding: 16px 62px
+	.contacts
+		&-block
+			display: none
+@media (max-width: 420px)
+	.navbar
+		&-block
+			min-height: 77px
+		&-contacts
+			flex-basis: 49.5%
+		&__logo
+			margin-left: 0px
+		&-menu
+			&__link
+				padding: 16px 83px
