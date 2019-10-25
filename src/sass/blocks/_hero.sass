@@ -1,0 +1,121 @@
+.swiper
+	&-container
+		width: 100%
+		max-height: 742px
+		background-color: #000000
+	&-slide
+		opacity: 0.3
+	&-pagination
+		
+		&-bullet
+			width: 20px
+			height: 20px
+
+			border-radius: 0
+			background-color: #ffffff
+			opacity: 1
+
+			&-active
+				background-color: $main-color
+	
+.hero	
+	position: relative
+	&__wrapper
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 650px
+		display: flex
+		align-items: center
+		z-index: 99	
+	&__container
+		margin-top: 180px
+	&__title
+		margin-bottom: 12px
+		+semibold
+		color: $main-color
+		font-size: 35px
+		text-transform: uppercase	
+	&__subtitle
+		color: #fffffe
+		font-size: 35px		
+
+	&__text
+		margin: 26px 0 49px
+		opacity: 0.42
+		color: #fffffe
+		font-size: 20px
+		line-height: 28px
+	&__button
+		padding: 12px 38px
+		color: $text-color
+		+semibold
+		font-size: 18px
+		text-transform: uppercase
+.slider
+	&-image
+
+
+@media (max-width: 1200px)
+	.slider
+		&-image
+
+	.hero
+		&__container
+			margin-top: 120px
+		&__title
+			font-size: 30px
+			line-height: 38px
+		&__subtitle
+			font-size: 30px
+		&__text
+			font-size: 18px
+			line-height: 22px
+		&__button
+			padding: 10px 32px
+		&__wrapper
+			height: 500px
+@media (max-width: 992px)
+	.hero
+		&__container
+			margin-top: 100px
+		&__title
+			font-size: 28px
+			line-height: 35px
+		&__subtitle
+			font-size: 28px
+		&__wrapper
+			height: 430px
+@media (max-width: 768px)
+	.hero
+		&__container
+			margin-top: 35px
+		&__title
+			font-size: 24px
+			line-height: 30px
+		&__subtitle
+			font-size: 24px
+		&__text
+			font-size: 16px
+			line-height: 20px	
+			margin-bottom: 32px
+		&__button
+			padding: 10px 24px	
+			font-size: 16px
+@media (max-width: 567px)
+	.hero
+		&__container
+			margin-top: 15px
+		&__title
+			font-size: 20px
+			line-height: 26px		
+		&__subtitle
+			font-size: 20px	
+		&__text
+			font-size: 14px
+			line-height: 16px	
+			margin: 15px 0 10px
+		&__button
+			padding: 10px 15px	
+			font-size: 14px	
