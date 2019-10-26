@@ -10,10 +10,10 @@ $(document).ready(function() {
 		$('.burger-button').removeClass('burger-button_dissabled');
 	});
 	var mySwiper = new Swiper ('.swiper-container', {
-		// autoplay: {
-  //     delay: 2500,
-  //     disableOnInteraction: false,
-  //   },
+		autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,

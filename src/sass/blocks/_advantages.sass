@@ -1,0 +1,193 @@
+.advantages
+	&__section
+		margin-top: 145px
+		padding-bottom: 64px
+		background-image: url('../img/navbar/navbar_bg.jpg')
+		background-size: 57.4%
+		background-position: left center
+		background-repeat: repeat-y
+	&__title
+		&-wrapper
+			margin-bottom: -2px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+	&__block
+		flex-basis: 57%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-content: center
+	&__item
+		flex-basis: 29.7%
+		height: 168px
+		margin-top: 36px
+		text-align: center
+		background: #ffffff
+	&__text
+		font-size: 18px
+		line-height: 23px
+		text-transform: uppercase
+	&__icon
+		margin-top: 16px
+		margin-bottom: 12px
+		min-height: 55px
+		&_4
+			margin-bottom: 17px
+		&_5
+			margin-bottom: 17px	
+		&_6
+			margin-top: 26px
+			margin-bottom: 8px
+	&__list
+		flex-basis: 36%
+		margin: 42px 0 -15px
+		padding-left: 12px
+		list-style-type: none
+
+		&-item
+			display: flex
+			margin-bottom: 38px
+			align-items: center
+			&_3
+				margin-top: 55px
+				margin-bottom: 72px
+.list
+	&__number
+		display: block
+		min-width: 21px
+		+bold
+		font-size: 35px
+		color: $main-color
+		
+
+	&__dash
+		display: inline-block
+		padding: 0 12px
+		margin-top: -1px
+		+reg
+		font-size: 39px
+	&__text
+		+semibold
+		font-size: 20px
+		line-height: 25px
+		&_1
+			margin-top: 27px
+			letter-spacing: -0.01em
+		&_2
+			margin-top: 27px
+		&_3
+			margin-top: 5px	
+		&_4
+			margin-top: 5px
+@media (max-width: 1200px)
+	.advantages
+		&__section
+			background-size: 59.4%
+		&__list
+			padding-left: 0
+		&__item
+			flex-basis: 32%	
+	.list
+		&__number
+			font-size: 30px
+		&__dash
+			padding: 0 10px
+			font-size: 30px
+		&__text
+			font-size: 18px
+@media (max-width: 992px)
+	.advantages
+		&__wrapper
+			flex-direction: column	
+		&__section
+			margin-top: 75px
+			background-size: 100%	59%
+			background-position: left top 
+			background-repeat: no-repeat	
+		&__item
+			flex-basis: 29.7%
+		&__list
+			margin-top: 95px
+			padding-left: 95px
+			&-item
+				margin-bottom: 22px
+				&_3
+					margin-top: 15px
+	.list
+		&__number
+			font-size: 35px
+		&__dash
+			padding: 0 12px
+			font-size: 39px
+		&__text
+			font-size: 20px
+			&_1
+				margin-top: 6px
+			&_2
+				margin-top: 3px
+			&_3
+				margin-top: 5px	
+			&_4
+				margin-top: 5px
+@media (max-width: 768px)	
+	.advantages
+		&__title
+			&-wrapper
+				max-width: 185px				
+		&__block
+			justify-content: space-around
+		&__item
+			flex-basis: 37.7%	
+		&__section
+			background-size: 100%	66.5%
+		&__list
+			margin-top: 60px
+			&-item
+				margin-bottom: 15px	
+				&_1
+					margin-bottom: 1px
+	.list	
+		&__text
+			&_1
+				margin-top: 27px
+			&_2
+				margin-top: 27px
+			&_3
+				margin-top: 5px	
+			&_4
+				margin-top: 5px
+@media (max-width: 567px)
+	.advantages
+		&__list
+			padding-left: 0
+		&__item
+			flex-basis: 51%	
+		&__section
+			background-size: 100%	79%							
+@media (max-width: 420px)	
+	.advantages
+		&__title
+			&-wrapper
+				max-width: 150px	
+		&__item
+			flex-basis: 69%
+		&__section
+			background-size: 100%	81.4%		
+	.list
+		&__number
+			font-size: 26px
+		&__dash
+			padding: 0 5px
+			font-size: 20px
+		&__text
+			font-size: 17px
+			line-height: 22px
+			&_1
+				margin-top: 21px
+			&_2
+				margin-top: 21px
+			&_3
+				margin-top: 0	
+			&_4
+				margin-top: 0							
