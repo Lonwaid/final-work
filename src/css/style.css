@@ -335,25 +335,69 @@ body {
 img {
   max-width: 100%; }
 
+.section {
+  padding: 100px 0 117px; }
+  .section__title {
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #020202; }
+    .section__title-wrapper {
+      margin: -129px 0 54px -32px;
+      width: 244px;
+      height: 58px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffc800; }
+
 .container {
   width: 1170px;
   margin: auto; }
 
 @media (max-width: 1200px) {
   .container {
-    width: 950px; } }
+    width: 950px; }
+  .section__title {
+    font-size: 26px; }
+    .section__title-wrapper {
+      width: 200px; } }
 
 @media (max-width: 992px) {
   .container {
     max-width: 726px;
-    width: 96%; } }
+    width: 96%; }
+  .section {
+    padding: 100px 0 80px; }
+    .section__title {
+      font-size: 24px; }
+      .section__title-wrapper {
+        margin: -129px 0 35px -6px;
+        max-width: 180px; } }
 
 @media (max-width: 768px) {
   .container {
     max-width: 528px;
-    width: 96%; } }
+    width: 96%; }
+  .section {
+    padding: 100px 0 70px; }
+    .section__title {
+      font-size: 22px; }
+      .section__title-wrapper {
+        max-width: 147px;
+        height: 50px;
+        margin: -126px 0 25px -2px; } }
 
 @media (max-width: 567px) {
+  .section {
+    padding: 100px 0 60px; }
+    .section__title {
+      font-size: 20px; }
+      .section__title-wrapper {
+        max-width: 115px;
+        height: 40px;
+        margin: -123px 0 15px -2px; }
   .container {
     max-width: 390px;
     width: 96%; } }
@@ -361,7 +405,15 @@ img {
 @media (max-width: 420px) {
   .container {
     max-width: 290px;
-    width: 96%; } }
+    width: 96%; }
+  .section {
+    padding: 100px 0 50px; }
+    .section__title {
+      font-size: 18px; }
+      .section__title-wrapper {
+        max-width: 115px;
+        height: 36px;
+        margin: -118px 0 15px; } }
 
 .button {
   background-color: #ffc800;
@@ -959,9 +1011,11 @@ button.swiper-pagination-bullet {
       outline: none; }
     .burger-button__close:focus {
       outline: none; }
-  .burger-menu__wrapper_enabled {
-    display: flex;
-    align-items: flex-start; } }
+  .burger-menu__wrapper {
+    z-index: 199; }
+    .burger-menu__wrapper_enabled {
+      display: flex;
+      align-items: flex-start; } }
 
 @media (max-width: 768px) {
   .navbar {
@@ -1049,6 +1103,9 @@ button.swiper-pagination-bullet {
     font-size: 18px;
     text-transform: uppercase; }
 
+.slider-image {
+  display: block; }
+
 @media (max-width: 1200px) {
   .hero__container {
     margin-top: 120px; }
@@ -1074,7 +1131,9 @@ button.swiper-pagination-bullet {
   .hero__subtitle {
     font-size: 28px; }
   .hero__wrapper {
-    height: 430px; } }
+    height: 430px; }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 15px; } }
 
 @media (max-width: 768px) {
   .hero__container {
@@ -1090,7 +1149,15 @@ button.swiper-pagination-bullet {
     margin-bottom: 32px; }
   .hero__button {
     padding: 10px 24px;
-    font-size: 16px; } }
+    font-size: 16px; }
+  .hero__wrapper {
+    height: 310px; }
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 20px;
+    left: 0;
+    width: 100%; }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 35px; } }
 
 @media (max-width: 567px) {
   .hero__container {
@@ -1106,4 +1173,128 @@ button.swiper-pagination-bullet {
     margin: 15px 0 10px; }
   .hero__button {
     padding: 10px 15px;
-    font-size: 14px; } }
+    font-size: 14px;
+    margin-top: 0; }
+  .hero__wrapper {
+    height: 240px; }
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 10px;
+    left: 0;
+    width: 100%; }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 35px; } }
+
+@media (max-width: 420px) {
+  .hero__container {
+    margin-top: 10px; }
+  .hero__title {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px; }
+  .hero__subtitle {
+    font-size: 16px;
+    letter-spacing: -0.02em; }
+  .hero__text {
+    display: none; }
+  .hero__button {
+    margin-top: 15px; }
+  .hero__wrapper {
+    height: 175px; } }
+
+@media (max-width: 360px) {
+  .hero__container {
+    margin-top: 0; }
+  .hero__title {
+    margin-bottom: 6px; }
+  .hero__button {
+    margin-top: 12px; }
+  .hero__wrapper {
+    height: 135px; }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 30px; } }
+
+.offers__section {
+  background-color: #f1f1f1;
+  margin-top: 133px; }
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 377px;
+  min-height: 236px;
+  margin-top: 21px; }
+  .tab__item-1 {
+    background-image: url("../img/offers/system-heating-installation.jpg");
+    background-size: cover; }
+  .tab__item-2 {
+    background-size: cover;
+    background-image: url("../img/offers/uslugi-santehnika.jpg"); }
+  .tab__item-3 {
+    background-size: cover;
+    background-image: url("../img/offers/sewer-equipment-inatallation.jpg"); }
+  .tab__item-4 {
+    background-size: cover;
+    background-image: url("../img/offers/system-heating-installation.jpg"); }
+  .tab__item-5 {
+    background-size: cover;
+    background-image: url("../img/offers/uslugi-santehnika.jpg"); }
+  .tab__item-6 {
+    background-size: cover;
+    background-image: url("../img/offers/sewer-equipment-inatallation.jpg"); }
+  .tab__title {
+    max-width: 300px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    color: #fcfafa;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center; }
+  .tab__button {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 8px 20px; }
+  .tabs-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+@media (max-width: 1200px) {
+  .tab {
+    margin-top: 33px; }
+    .tabs-block {
+      justify-content: space-around; } }
+
+@media (max-width: 992px) {
+  .tab {
+    min-width: 350px;
+    min-height: 219px;
+    margin-top: 15px; }
+  .offers__section {
+    margin-top: 95px; } }
+
+@media (max-width: 768px) {
+  .offers__section {
+    margin-top: 80px; }
+  .tab {
+    margin-top: 25px; } }
+
+@media (max-width: 567px) {
+  .tab__title {
+    line-height: 22px; }
+  .offers__section {
+    margin-top: 80px; } }
+
+@media (max-width: 567px) {
+  .offers__section {
+    margin-top: 60px; } }
+
+@media (max-width: 420px) {
+  .tab {
+    min-width: 320px;
+    min-height: 200px; }
+    .tab__title {
+      line-height: 20px; } }

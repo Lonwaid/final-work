@@ -55,8 +55,7 @@
 		text-transform: uppercase
 .slider
 	&-image
-
-
+		display: block
 @media (max-width: 1200px)
 	.slider
 		&-image
@@ -87,6 +86,8 @@
 			font-size: 28px
 		&__wrapper
 			height: 430px
+	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet 
+	  margin: 0 15px		
 @media (max-width: 768px)
 	.hero
 		&__container
@@ -103,6 +104,14 @@
 		&__button
 			padding: 10px 24px	
 			font-size: 16px
+		&__wrapper
+			height: 310px	
+	.swiper-pagination-fraction,.swiper-pagination-custom,.swiper-container-horizontal > .swiper-pagination-bullets 
+	  bottom: 20px
+	  left: 0
+	  width: 100%
+	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet 
+	  margin: 0 35px 		
 @media (max-width: 567px)
 	.hero
 		&__container
@@ -119,3 +128,42 @@
 		&__button
 			padding: 10px 15px	
 			font-size: 14px	
+			margin-top: 0
+		&__wrapper
+			height: 240px	
+	.swiper-pagination-fraction,.swiper-pagination-custom,.swiper-container-horizontal > .swiper-pagination-bullets 
+	  bottom: 10px
+	  left: 0
+	  width: 100%
+	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet 
+	  margin: 0 35px 		
+@media (max-width: 420px)	
+	.hero
+		&__container
+			margin-top: 10px
+		&__title
+			font-size: 16px
+			line-height: 20px
+			letter-spacing: -0.02em	
+			margin-bottom: 20px	
+		&__subtitle
+			font-size: 16px
+			letter-spacing: -0.02em	
+		&__text
+			display: none
+		&__button
+			margin-top: 15px	
+		&__wrapper
+			height: 175px		
+@media (max-width: 360px)	 
+	.hero
+		&__container
+			margin-top: 0
+		&__title
+			margin-bottom: 6px	
+		&__button
+			margin-top: 12px
+		&__wrapper
+			height: 135px		
+	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet 
+  	margin: 0 30px 		

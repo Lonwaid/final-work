@@ -5,28 +5,79 @@ body
 	color: $text-color
 img
 	max-width: 100%
+.section
+	padding: 100px 0 117px
+	&__title
+		+semibold
+		font-size: 28px
+		text-transform: uppercase
+		color: $text-color
+		&-wrapper
+			margin: -129px 0 54px -32px
+			width: 244px
+			height: 58px
+			display: flex	
+			justify-content: center
+			align-items: center
+			background-color: $main-color
 .container
 	width: 1170px
 	margin: auto
 @media (max-width: 1200px)
 	.container
 		width: 950px
+	.section
+		&__title
+			font-size: 26px
+			&-wrapper
+				width: 200px	
 @media (max-width: 992px)
   .container
     max-width: 726px
     width: 96%
+  .section
+  	padding: 100px 0 80px
+  	&__title
+  		font-size: 24px  
+  		&-wrapper
+  			margin: -129px 0 35px -6px
+  			max-width: 180px
 @media (max-width: 768px)
   .container
     max-width: 528px
     width: 96%
+  .section
+  	padding: 100px 0 70px
+  	&__title
+  		font-size: 22px
+  		&-wrapper
+  			max-width: 147px
+  			height: 50px
+  			margin: -126px 0 25px -2px
 @media (max-width: 567px)
-  .container
-    max-width: 390px
-    width: 96%
+	.section
+		padding: 100px 0 60px
+		&__title
+			font-size: 20px
+			&-wrapper
+				max-width: 115px
+				height: 40px
+				margin: -123px 0 15px -2px
+	.container
+	  max-width: 390px
+	  width: 96%
 @media (max-width: 420px)
   .container
     max-width: 290px
     width: 96%	
+  .section
+  	padding: 100px 0 50px
+  	&__title
+  		font-size: 18px
+  		&-wrapper
+  			max-width: 115px
+  			height: 36px	
+  			margin: -118px 0 15px 
 .button
 	background-color: $main-color
 	color: $text-color
