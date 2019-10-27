@@ -1,0 +1,89 @@
+#map
+	filter: grayscale(1)
+	-ms-filter: grayscale(1)
+	-webkit-filter: grayscale(1)
+	-moz-filter: grayscale(1)
+	-o-filter: grayscale(1)
+.footer
+	position: relative
+	background-color: #000000
+	padding-bottom: 1px
+	&__form
+		position: absolute
+		top: 141px
+		left: 352px
+	&__wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		min-height: 129px
+		color: #ffffff
+	&__contacts
+		display: flex
+		padding-bottom: 3px	
+.address
+	display: flex
+	align-items: center
+	&__text
+		margin-left: 13px
+		font-size: 20px
+.social
+	padding-bottom: 5px
+	font-size: 0
+.insta__link
+	margin-left: 10px
+.vk__link, .odnoklasniki__link
+	margin-left: 10px
+.email__link, .tel__link
+	font-size: 18px
+	color: #ffffff
+	text-decoration: none
+	margin-left: 9px
+.tel__icon
+	display: inline-block
+	padding-left: 22px
+	margin-left: 26px
+	border-left: 1px solid rgba(255, 255, 255, 0.33)
+.email__link
+	padding-bottom: 2px
+.tel, .email
+	display: flex
+	align-items: center
+@media (max-width: 1200px)
+	.footer
+		&__form
+			left: 110px
+@media (max-width: 992px)
+	.footer		
+		&__wrapper
+			align-content: space-evenly
+		&__form
+			left: 40px
+@media (max-width: 768px)
+	.email__link, .tel__link
+		font-size: 16px
+	.address__text
+		font-size: 18px
+	.footer		
+		&__form
+			left: 10px
+@media (max-width: 567px)
+	.footer		
+		&__wrapper
+			flex-direction: column
+			min-height: 250px
+			justify-content: space-evenly
+		&__contacts
+			display: block
+	.tel
+		margin-top: 15px
+		&__icon
+			border: none
+			margin-left: 0
+			padding-left: 0	
+@media (max-width: 567px)
+	.address
+		&__text
+			font-size: 16px				
+

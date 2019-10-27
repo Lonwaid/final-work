@@ -23,6 +23,45 @@ img
 .container
 	width: 1170px
 	margin: auto
+.button
+	background-color: $main-color
+	color: $text-color
+	border: none
+	padding: 7px 14px 
+	font-size: 15px
+	&:active
+		outline: none
+	&:focus
+		outline: none
+.form
+	max-width: 400px
+	width: 90%
+	box-shadow: 5px 0 10px rgba(0,0,0,0.5)
+	background-color: #ffffff
+	text-align: center
+	&__title
+		margin: 48px 0 5px
+		+bold
+		font-size: 20px
+		text-transform: uppercase
+		&-colored
+			color: $main-color
+	&__button
+		width: 76%
+		font-size: 21px
+		padding: 17px 
+		margin-top: 65px
+		margin-bottom: 58px
+		text-transform: uppercase
+.input
+	+reg
+	font-size: 18px
+	margin-top: 38px
+	padding-bottom: 4px
+	width: 77%
+	border: none
+	border-bottom: 1px solid #000000
+	opacity: 0.65
 @media (max-width: 1200px)
 	.container
 		width: 950px
@@ -54,6 +93,8 @@ img
   			max-width: 147px
   			height: 50px
   			margin: -126px 0 25px -2px
+  .form
+  	max-width: 335px			
 @media (max-width: 567px)
 	.section
 		padding: 100px 0 60px
@@ -63,6 +104,15 @@ img
 				max-width: 115px
 				height: 40px
 				margin: -123px 0 15px -2px
+	.form
+		&__title
+			margin: 40px 0 5px
+			font-size: 18px
+		&__button
+			margin-top: 50px
+			margin-bottom: 45px
+			font-size: 19px
+
 	.container
 	  max-width: 390px
 	  width: 96%
@@ -78,13 +128,7 @@ img
   			max-width: 115px
   			height: 36px	
   			margin: -118px 0 15px 
-.button
-	background-color: $main-color
-	color: $text-color
-	border: none
-	padding: 7px 14px 
-	font-size: 15px
-	&:active
-		outline: none
-	&:focus
-		outline: none
+  .form
+  	width: 93%
+
+

@@ -1,0 +1,95 @@
+.section
+	&__news
+		background-color: lighten($bg-color, 2.35)
+		margin-top: 147px
+		padding: 100px 0 72px
+.news
+	&-block
+		display: flex	
+		flex-wrap: wrap
+		justify-content: space-between
+		padding: 4px 0 48px
+	&__unit
+		max-width: 378px
+	&__image
+		margin-bottom: 19px
+	&__subtitle
+		+bold
+		font-size: 20px	
+		text-transform: uppercase
+		&-wrapper
+			width: 88%
+			display: flex
+			justify-content: space-between
+			align-items: center
+	&__date
+		display: inline-block
+		padding: 4px 4px
+		margin-bottom: 2px
+		font-size: 16px
+		background: url('../img/news/date_bg.jpg') no-repeat
+
+	&__text
+		width: 90%
+		margin-top: 13px
+		font-size: 18px
+		line-height: 28px
+		opacity: 0.83
+	&__link
+		display: block
+		max-width: 300px
+		margin: 0 auto
+		font-size: 20px
+		text-align: center
+		text-transform: uppercase
+		text-decoration: none
+		background-color: $main-color
+		border: none
+		padding: 17px 20px
+		color: $text-color
+@media (max-width: 1200px)
+	.news
+		&-block
+			justify-content: space-around
+		&__unit
+			margin-top: 10px
+@media (max-width: 992px)	
+	.section
+		&__news
+			margin-top: 95px			
+@media (max-width: 768px)	
+	.section
+		&__news
+			margin-top: 80px	
+@media (max-width: 567px)	
+	.section
+		&__news
+			margin-top: 60px	
+			padding: 100px 0 60px
+	.news
+		&-block
+			padding-bottom: 25px
+		&__subtitle
+			font-size: 18px	
+		&__date
+			font-size: 15px
+		&__text
+			font-size: 16px
+			line-height: 24px
+		&__link
+			font-size: 18px
+			max-width: 250px
+			padding: 15px 20px	
+@media (max-width: 420px)
+	.section
+		&__news
+			margin-top: 50px
+			padding: 100px 0 50px			
+	.news
+		&__subtitle-wrapper
+			width: 100%
+		&__text				
+			width: 100%
+		&__link
+			font-size: 16px
+			max-width: 220px	

@@ -1,0 +1,84 @@
+.section
+	&__reviews
+		padding: 100px 0 1px
+		margin-top: 142px
+		background-color: #000000
+.slide
+	&-wrapper
+		max-width: 470px
+		min-height: 300px
+		text-align: center
+		
+	&__client-image
+		display: inline-block
+		position: relative
+	&__client-image:before
+		content: '\201C'
+		position: absolute
+		right: 6px
+		+bold
+		font-size: 51px
+		display: block
+		width: 35px
+		height: 35px
+		border-radius: 50%
+		color: #ffffff
+		background-color: $main-color
+		z-index: 9999999
+	&__likes
+		display: inline-block
+		margin-right: 5px
+
+	&__username
+		margin-top: 12px
+		margin-bottom: 0
+		color: $main-color
+		+semibold
+		font-size: 20px
+	&__text
+		margin: 17px 0 23px
+		color: #ffffff 
+		font-size: 20px
+		line-height: 28px
+
+.button
+	&__like, &__dislike
+		padding: 1px
+		font-size: 0
+		background-color: #000000
+		border: none
+	&__dislike
+		margin-left: 23px
+.dislikes__counter, .likes__counter
+	color: #ffffff 
+.reviews
+		&-slider
+			padding-top: 29px
+		&__swiper
+			&-container
+				min-height: 471px
+@media (max-width: 992px)
+	.slide
+		&-wrapper
+			margin: auto
+	.section
+		&__reviews
+			margin-top: 20px
+@media (max-width: 768px)	
+	.reviews
+		&__swiper
+			&-container
+				min-height: 415px	
+	.section
+		&__reviews
+			padding: 100px 0 20px			
+@media (max-width: 567px)
+	.section
+		&__reviews
+			margin-top: 0
+@media (max-width: 420px)	
+	.slide
+		&__text
+			font-size: 18px
+			line-height: 26px
+				
