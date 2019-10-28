@@ -10,6 +10,7 @@
 	min-width: 377px
 	min-height: 236px
 	margin-top: 21px
+	filter: grayscale(1)
 
 	&__item-1
 		background-image: url('../img/offers/system-heating-installation.jpg')
@@ -42,11 +43,22 @@
 		font-size: 15px
 		text-transform: uppercase
 		padding: 8px 20px
+		&-wrapper
+			position: relative
 	&s
 		&-block
 			display: flex 
 			flex-wrap: wrap
 			justify-content: space-between
+.button__substrate	
+	position: absolute
+	top: 0
+	left: 0
+	display: none	
+	width: 138.38px
+	background-color: #000000
+	color: #ffffff	
+	text-align: center
 @media (max-width: 1200px)
 	.tab
 		margin-top: 33px
@@ -84,6 +96,13 @@
 		min-height: 200px
 		&__title
 			line-height: 20px
+@media (min-width: 992px)
+	.tab:hover
+		filter: grayscale(0)
+		transition-duration: 0.1s	
+	.tab__button-wrapper:hover .button__substrate
+		display: block
+
 
 
 

@@ -40,7 +40,7 @@ img
 	background-color: #ffffff
 	text-align: center
 	&__title
-		margin: 48px 0 5px
+		padding: 48px 0 5px
 		+bold
 		font-size: 20px
 		text-transform: uppercase
@@ -58,10 +58,27 @@ img
 	font-size: 18px
 	margin-top: 38px
 	padding-bottom: 4px
-	width: 77%
+	width: 100%
 	border: none
 	border-bottom: 1px solid #000000
 	opacity: 0.65
+	&:focus
+		// border: 1px solid $main-color
+		// border-radius: 10px
+		outline: none
+	&-group
+		position: relative
+		max-width: 308px
+		margin: auto
+.invalid
+	border: 1px solid red
+div.invalid
+	position: absolute
+	bottom: -17px
+	left: 0
+	border: none
+	color: red
+	font-size: 14px
 @media (max-width: 1200px)
 	.container
 		width: 950px
@@ -106,7 +123,7 @@ img
 				margin: -123px 0 15px -2px
 	.form
 		&__title
-			margin: 40px 0 5px
+			padding: 40px 0 5px
 			font-size: 18px
 		&__button
 			margin-top: 50px
@@ -130,5 +147,11 @@ img
   			margin: -118px 0 15px 
   .form
   	width: 93%
+@media (min-width: 992px)
+	.button:hover
+		background-color: darken( $main-color, 10% )
+		color: #ffffff
+		cursor: pointer
+
 
 
