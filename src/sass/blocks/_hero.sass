@@ -24,35 +24,34 @@
 		position: absolute
 		top: 0
 		left: 0
+		z-index: 99
 		width: 100%
-		height: 650px
+		height: 1px
 		display: flex
 		align-items: center
-		z-index: 99	
 	&__container
 		margin-top: 180px
 	&__title
 		margin-bottom: 12px
 		+semibold
-		color: $main-color
 		font-size: 35px
 		text-transform: uppercase	
+		color: $main-color
 	&__subtitle
-		color: #fffffe
 		font-size: 35px		
-
+		color: #fffffe
 	&__text
 		margin: 26px 0 49px
-		opacity: 0.42
-		color: #fffffe
 		font-size: 20px
 		line-height: 28px
+		opacity: 0.42
+		color: #fffffe
 	&__button
 		padding: 12px 38px
-		color: $text-color
 		+semibold
 		font-size: 18px
 		text-transform: uppercase
+		color: $text-color
 .slider
 	&-image
 		display: block
@@ -98,9 +97,9 @@
 		&__subtitle
 			font-size: 24px
 		&__text
+			margin-bottom: 32px
 			font-size: 16px
 			line-height: 20px	
-			margin-bottom: 32px
 		&__button
 			padding: 10px 24px	
 			font-size: 16px
@@ -122,13 +121,13 @@
 		&__subtitle
 			font-size: 20px	
 		&__text
+			margin: 15px 0 10px
 			font-size: 14px
 			line-height: 16px	
-			margin: 15px 0 10px
 		&__button
+			margin-top: 0
 			padding: 10px 15px	
 			font-size: 14px	
-			margin-top: 0
 		&__wrapper
 			height: 240px	
 	.swiper-pagination-fraction,.swiper-pagination-custom,.swiper-container-horizontal > .swiper-pagination-bullets 
@@ -142,10 +141,10 @@
 		&__container
 			margin-top: 10px
 		&__title
+			margin-bottom: 20px
 			font-size: 16px
 			line-height: 20px
 			letter-spacing: -0.02em	
-			margin-bottom: 20px	
 		&__subtitle
 			font-size: 16px
 			letter-spacing: -0.02em	
@@ -157,14 +156,5 @@
 			height: 175px
 	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet 
   	margin: 0 25px 				
-@media (max-width: 360px)	 
-	.hero
-		&__container
-			margin-top: 0
-		&__title
-			margin-bottom: 6px	
-		&__button
-			margin-top: 12px
-		&__wrapper
-			height: 135px		
+	
 			

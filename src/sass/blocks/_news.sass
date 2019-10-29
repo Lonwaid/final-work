@@ -1,8 +1,8 @@
 .section
 	&__news
-		background-color: lighten($bg-color, 2.35)
 		margin-top: 147px
 		padding: 100px 0 72px
+		background-color: lighten($bg-color, 2.35)
 .news
 	&-block
 		display: flex	
@@ -39,13 +39,13 @@
 		display: block
 		max-width: 300px
 		margin: 0 auto
+		padding: 17px 20px
 		font-size: 20px
 		text-align: center
 		text-transform: uppercase
 		text-decoration: none
 		background-color: $main-color
 		border: none
-		padding: 17px 20px
 		color: $text-color
 @media (max-width: 1200px)
 	.news
@@ -77,9 +77,9 @@
 			font-size: 16px
 			line-height: 24px
 		&__link
+			padding: 15px 20px
 			font-size: 18px
 			max-width: 250px
-			padding: 15px 20px	
 @media (max-width: 420px)
 	.section
 		&__news
@@ -91,8 +91,8 @@
 		&__text				
 			width: 100%
 		&__link
+			max-width: 220px
 			font-size: 16px
-			max-width: 220px	
 @media (min-width: 992px)		
 	.news__link:hover
 		background-color: darken( $main-color, 10% )

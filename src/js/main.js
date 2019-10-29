@@ -1,6 +1,7 @@
 new WOW().init();
 $(document).ready(function() {
 	var button = document.querySelector('#button');
+	var button2 = document.querySelector('#button2');
 	var modalForm = document.querySelector('#modal');
 	var modalThanks = document.querySelector('#modal-thanks');
 	var close = document.querySelector('#close');
@@ -8,7 +9,9 @@ $(document).ready(function() {
 
 	button.addEventListener('click', function() {
 		modalForm.classList.add('modal_active');
-		// console.log('');
+	});
+	button2.addEventListener('click', function() {
+		modalForm.classList.add('modal_active');
 	});
 	close.addEventListener('click', function() {
 		modalForm.classList.remove('modal_active');
@@ -26,13 +29,13 @@ $(document).ready(function() {
 		$('.navbar__logo').removeClass('navbar__logo_margin');
 		$('.burger-button').removeClass('burger-button_dissabled');
 	});
-	$(".navbar").on("click","a", function (event) {
+	$(".navbar-menu__item").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
-	var mySwiper = new Swiper ('.swiper-container', {
+	var mySwiper = new Swiper ('.hero__swiper-container', {
 		autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -43,8 +46,6 @@ $(document).ready(function() {
 		},
 	});
 	var reviewsSwiper = new Swiper ('.reviews__swiper-container', {
-  	autoplay: false,
-
   	slidesPerView: 1,
   	spaceBetween: 30,
     breakpoints: {
@@ -54,7 +55,7 @@ $(document).ready(function() {
     	},
     	1200: {
     		slidesPerView: 2,
-    		spaceBetween: 229,
+    		spaceBetween: 226,
     	},
     },
 		pagination: {

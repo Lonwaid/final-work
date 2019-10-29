@@ -2,23 +2,22 @@
 	position: fixed
 	left: 0
 	top: 0
+	z-index: 299
+	display: none
 	width: 100%
 	height: 100%
 	background-color: rgba(#000, 0.5)
-	display: none
-	z-index: 299
 	&__form
 		width: 100%
-		
 	&_active
 		display: flex
 	&-dialog
 		position: relative
+		z-index: 299
 		margin: auto
 		max-width: 400px
 		width: 90%
 		min-width: 200px
-		z-index: 299
 		background-color: #ffffff
 		&__close
 			position: absolute

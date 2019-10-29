@@ -1,7 +1,7 @@
 .offers
 	&__section
-		background-color: lighten($bg-color, 2.35)
 		margin-top: 133px
+		background-color: lighten($bg-color, 2.35)
 .tab
 	display: flex
 	flex-direction: column
@@ -34,15 +34,15 @@
 		max-width: 300px
 		margin-top: -10px
 		margin-bottom: 25px
-		color: $tab-color
 		font-size: 20px
 		line-height: 26px
 		font-weight: normal
 		text-align: center
+		color: $tab-color
 	&__button
+		padding: 8px 20px
 		font-size: 15px
 		text-transform: uppercase
-		padding: 8px 20px
 		&-wrapper
 			position: relative
 	&s
@@ -56,9 +56,9 @@
 	left: 0
 	display: none	
 	width: 138.38px
+	text-align: center
 	background-color: #000000
 	color: #ffffff	
-	text-align: center
 @media (max-width: 1200px)
 	.tab
 		margin-top: 33px
@@ -70,6 +70,7 @@
 		min-width: 350px
 		min-height: 219px
 		margin-top: 15px
+		filter: grayscale(0)
 	.offers
 		&__section	
 			margin-top: 95px

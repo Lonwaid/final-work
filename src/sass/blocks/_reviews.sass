@@ -16,15 +16,16 @@
 		content: '\201C'
 		position: absolute
 		right: 6px
-		+bold
-		font-size: 51px
+		z-index: 9999999
 		display: block
 		width: 35px
 		height: 35px
+		+bold
+		font-size: 51px
 		border-radius: 50%
 		color: #ffffff
 		background-color: $main-color
-		z-index: 9999999
+		
 	&__likes
 		display: inline-block
 		margin-right: 5px
@@ -32,15 +33,14 @@
 	&__username
 		margin-top: 12px
 		margin-bottom: 0
-		color: $main-color
 		+semibold
 		font-size: 20px
+		color: $main-color
 	&__text
 		margin: 17px 0 23px
-		color: #ffffff 
 		font-size: 20px
 		line-height: 28px
-
+		color: #ffffff 
 .button
 	&__like, &__dislike
 		padding: 1px
@@ -64,6 +64,8 @@
 	.section
 		&__reviews
 			margin-top: 20px
+	.swiper-pagination
+		display: none		
 @media (max-width: 768px)	
 	.reviews
 		&__swiper
