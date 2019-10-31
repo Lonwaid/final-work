@@ -39,8 +39,12 @@
 		font-size: 18px
 		+bold
 		color: $text-color
+	&__tel-link span
+		+reg	
 	&__logo
 		padding-top: 2px
+		&_margin
+			margin-right: -40px
 	&__button
 		font-size: 14px
 	&-contacts
@@ -58,8 +62,9 @@
 			outline: none
 		border: 0	
 	&-menu
-		padding: 16px 10px 16px 0
+		padding: 0
 		margin: 0
+		margin-top: 16px
 		background-color: #ffffff
 		list-style: none
 		&__wrapper
@@ -81,17 +86,33 @@
 			padding-left: 0
 			&__item
 				padding: 0 20px
-@media (max-width: 992px)
+@media (min-width: 769px) and (max-width: 992px)
 	.navbar
-		background-size: 51.6%
-		&__logo
-			margin-left: -50px
-			&_margin
-				margin-left: 180px
-		&-burger
-			display: block
+		background-size: 43.6%
 		&-contacts
 			flex-basis: 47.4%
+			margin-left: 3px
+		&-menu
+			margin-left: 10px
+			&__item
+				padding: 0 10px
+			&__link
+				font-size: 15px
+		&__tel-link
+			font-size: 16px			
+		
+	
+@media (max-width: 768px)
+	.navbar
+		background-size: 61.6%
+		&__logo
+			margin-left: -16px
+		&-contacts
+			flex-basis: 60.4%		
+		&__tel-link
+			font-size: 16px
+		&-burger
+			display: block	
 		&-menu
 			display: none	
 			&__item
@@ -117,19 +138,11 @@
 				border: 0	
 		&-menu
 			&__wrapper
+				top: 65px
 				z-index: 199
 				&_enabled
 					display: flex
-					align-items: flex-start
-@media (max-width: 768px)
-	.navbar
-		background-size: 61.6%
-		&__logo
-			margin-left: -16px
-		&-contacts
-			flex-basis: 60.4%		
-		&__tel-link
-			font-size: 16px
+					align-items: flex-start				
 @media (max-width: 567px)
 	.navbar
 		background-size: 49.6%
@@ -145,6 +158,7 @@
 			display: none
 @media (max-width: 420px)
 	.navbar
+		background-size: 0 
 		&-block
 			min-height: 77px
 		&-contacts
@@ -154,6 +168,10 @@
 		&-menu
 			&__link
 				padding: 16px 83px
+	.burger-menu
+		margin-top: 12px	
+	.burger-button__close
+		margin-top: 12px			
 @media (min-width: 992px)
 	.navbar
 		&-menu

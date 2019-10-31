@@ -40,6 +40,7 @@ $(document).ready(function() {
       delay: 2500,
       disableOnInteraction: false,
     },
+    loop: true,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
@@ -48,6 +49,7 @@ $(document).ready(function() {
 	var reviewsSwiper = new Swiper ('.reviews__swiper-container', {
   	slidesPerView: 1,
   	spaceBetween: 30,
+  	loop: true,
     breakpoints: {
     	992: {
     		slidesPerView: 2,

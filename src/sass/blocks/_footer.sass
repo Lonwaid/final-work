@@ -33,10 +33,19 @@
 .social
 	padding-bottom: 5px
 	font-size: 0
+	&__link
+		display: inline-block
+		width: 26px
+		height: 26px
 .insta__link
 	margin-left: 10px
+	background-image: url('../img/footer/icon_instagram_1.png')
 .vk__link, .odnoklasniki__link
 	margin-left: 10px
+.vk__link
+	background-image: url('../img/footer/icon_vk.png')
+.odnoklasniki__link	
+	background-image: url('../img/footer/icon_odnoklassniki.png')	
 .email__link, .tel__link
 	margin-left: 9px
 	font-size: 18px
@@ -84,10 +93,20 @@
 			margin-left: 0
 			padding-left: 0
 			border: none
+@media (max-width: 420px)
+	.footer__input
+		width: 95%
+
 @media (max-width: 567px)
 	.address
 		&__text
 			font-size: 16px	
 @media (min-width: 992px)						
-	.social__link:hover
-		opacity: 0.5
+	// .social__link:hover
+	// 	opacity: 0.5
+	.insta__link:hover
+		background-image: url('../img/footer/icon_instagram.png')
+	.vk__link:hover
+		background-image: url('../img/footer/icon_vk_2.png')	
+	.odnoklasniki__link:hover
+		background-image: url('../img/footer/icon_odnoklassniki_4.png')

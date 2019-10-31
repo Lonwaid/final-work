@@ -10,7 +10,9 @@
 	min-width: 377px
 	min-height: 236px
 	margin-top: 21px
-	filter: grayscale(1)
+	// filter: grayscale(1)
+	&-wrapper
+		background-color: #000000
 
 	&__item-1
 		background-image: url('../img/offers/system-heating-installation.jpg')
@@ -70,10 +72,13 @@
 		min-width: 350px
 		min-height: 219px
 		margin-top: 15px
-		filter: grayscale(0)
+		// filter: grayscale(0)
 	.offers
 		&__section	
 			margin-top: 95px
+@media (max-width: 991px)	
+	.button__substrate
+		display: block		
 @media (max-width: 768px)
 	.offers
 		&__section	
@@ -98,9 +103,9 @@
 		&__title
 			line-height: 20px
 @media (min-width: 992px)
-	.tab:hover
-		filter: grayscale(0)
-		transition-duration: 0.1s	
+	// .tab:hover
+	// 	filter: grayscale(0)
+	// 	transition-duration: 0.1s	
 	.tab__button-wrapper:hover .button__substrate
 		display: block
 

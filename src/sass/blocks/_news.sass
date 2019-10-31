@@ -11,6 +11,8 @@
 		padding: 4px 0 48px
 	&__unit
 		max-width: 378px
+		text-decoration: none
+		color: $text-color
 	&__image
 		margin-bottom: 19px
 	&__subtitle
@@ -98,3 +100,9 @@
 		background-color: darken( $main-color, 10% )
 		color: #ffffff
 		cursor: pointer	
+@media (min-width: 992px)		
+	.news__unit:hover .news__subtitle 
+		text-decoration: underline
+	.news__unit:hover .news__text
+		text-decoration: underline
+		

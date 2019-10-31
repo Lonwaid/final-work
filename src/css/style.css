@@ -1098,8 +1098,13 @@ button.swiper-pagination-bullet {
     font-family: 'Proxima Nova Rg';
     font-weight: bold;
     color: #020202; }
+  .navbar__tel-link span {
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal; }
   .navbar__logo {
     padding-top: 2px; }
+    .navbar__logo_margin {
+      margin-right: -40px; }
   .navbar__button {
     font-size: 14px; }
   .navbar-contacts {
@@ -1118,8 +1123,9 @@ button.swiper-pagination-bullet {
     outline: none; }
 
 .burger-menu {
-  padding: 16px 10px 16px 0;
+  padding: 0;
   margin: 0;
+  margin-top: 16px;
   background-color: #ffffff;
   list-style: none; }
   .burger-menu__wrapper {
@@ -1142,17 +1148,32 @@ button.swiper-pagination-bullet {
     .navbar-menu__item {
       padding: 0 20px; } }
 
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .navbar {
-    background-size: 51.6%; }
+    background-size: 43.6%; }
+    .navbar-contacts {
+      flex-basis: 47.4%;
+      margin-left: 3px; }
+    .navbar-menu {
+      margin-left: 10px; }
+      .navbar-menu__item {
+        padding: 0 10px; }
+      .navbar-menu__link {
+        font-size: 15px; }
+    .navbar__tel-link {
+      font-size: 16px; } }
+
+@media (max-width: 768px) {
+  .navbar {
+    background-size: 61.6%; }
     .navbar__logo {
-      margin-left: -50px; }
-      .navbar__logo_margin {
-        margin-left: 180px; }
+      margin-left: -16px; }
+    .navbar-contacts {
+      flex-basis: 60.4%; }
+    .navbar__tel-link {
+      font-size: 16px; }
     .navbar-burger {
       display: block; }
-    .navbar-contacts {
-      flex-basis: 47.4%; }
     .navbar-menu {
       display: none; }
       .navbar-menu__item {
@@ -1175,20 +1196,11 @@ button.swiper-pagination-bullet {
     .burger-button__close:focus {
       outline: none; }
   .burger-menu__wrapper {
+    top: 65px;
     z-index: 199; }
     .burger-menu__wrapper_enabled {
       display: flex;
       align-items: flex-start; } }
-
-@media (max-width: 768px) {
-  .navbar {
-    background-size: 61.6%; }
-    .navbar__logo {
-      margin-left: -16px; }
-    .navbar-contacts {
-      flex-basis: 60.4%; }
-    .navbar__tel-link {
-      font-size: 16px; } }
 
 @media (max-width: 567px) {
   .navbar {
@@ -1203,14 +1215,20 @@ button.swiper-pagination-bullet {
     display: none; } }
 
 @media (max-width: 420px) {
-  .navbar-block {
-    min-height: 77px; }
-  .navbar-contacts {
-    flex-basis: 49.5%; }
-  .navbar__logo {
-    margin-left: 0px; }
-  .navbar-menu__link {
-    padding: 16px 83px; } }
+  .navbar {
+    background-size: 0; }
+    .navbar-block {
+      min-height: 77px; }
+    .navbar-contacts {
+      flex-basis: 49.5%; }
+    .navbar__logo {
+      margin-left: 0px; }
+    .navbar-menu__link {
+      padding: 16px 83px; }
+  .burger-menu {
+    margin-top: 12px; }
+  .burger-button__close {
+    margin-top: 12px; } }
 
 @media (min-width: 992px) {
   .navbar-menu__link:hover {
@@ -1230,6 +1248,7 @@ button.swiper-pagination-bullet {
 .hero {
   position: relative; }
   .hero__swiper-container {
+    max-width: 1920px;
     width: 100%;
     max-height: 742px;
     background-color: #000000; }
@@ -1270,8 +1289,10 @@ button.swiper-pagination-bullet {
     text-transform: uppercase;
     color: #020202; }
 
-.slider-image {
-  display: block; }
+.slider {
+  background-color: #f7f7f7; }
+  .slider-image {
+    display: block; }
 
 @media (max-width: 1200px) {
   .hero__container {
@@ -1335,7 +1356,7 @@ button.swiper-pagination-bullet {
   .hero__subtitle {
     font-size: 20px; }
   .hero__text {
-    margin: 15px 0 10px;
+    margin: 10px 0;
     font-size: 14px;
     line-height: 16px; }
   .hero__button {
@@ -1382,8 +1403,9 @@ button.swiper-pagination-bullet {
   align-items: center;
   min-width: 377px;
   min-height: 236px;
-  margin-top: 21px;
-  filter: grayscale(1); }
+  margin-top: 21px; }
+  .tab-wrapper {
+    background-color: #000000; }
   .tab__item-1 {
     background-image: url("../img/offers/system-heating-installation.jpg");
     background-size: cover; }
@@ -1442,10 +1464,13 @@ button.swiper-pagination-bullet {
   .tab {
     min-width: 350px;
     min-height: 219px;
-    margin-top: 15px;
-    filter: grayscale(0); }
+    margin-top: 15px; }
   .offers__section {
     margin-top: 95px; } }
+
+@media (max-width: 991px) {
+  .button__substrate {
+    display: block; } }
 
 @media (max-width: 768px) {
   .offers__section {
@@ -1471,9 +1496,6 @@ button.swiper-pagination-bullet {
       line-height: 20px; } }
 
 @media (min-width: 992px) {
-  .tab:hover {
-    filter: grayscale(0);
-    transition-duration: 0.1s; }
   .tab__button-wrapper:hover .button__substrate {
     display: block; } }
 
@@ -1671,6 +1693,10 @@ button.swiper-pagination-bullet {
     .list__text_4 {
       margin-top: 0; } }
 
+@media (min-width: 1921px) {
+  .advantages__section {
+    background-size: 55.5%; } }
+
 .section__reviews {
   padding: 100px 0 1px;
   margin-top: 142px;
@@ -1759,6 +1785,14 @@ button.swiper-pagination-bullet {
     font-size: 18px;
     line-height: 26px; } }
 
+@media (min-width: 992px) {
+  .button__like:hover {
+    transform: scale(1.1);
+    cursor: pointer; }
+  .button__dislike:hover {
+    transform: scale(1.1);
+    cursor: pointer; } }
+
 .section__news {
   margin-top: 147px;
   padding: 100px 0 72px;
@@ -1771,7 +1805,9 @@ button.swiper-pagination-bullet {
   padding: 4px 0 48px; }
 
 .news__unit {
-  max-width: 378px; }
+  max-width: 378px;
+  text-decoration: none;
+  color: #020202; }
 
 .news__image {
   margin-bottom: 19px; }
@@ -1864,6 +1900,12 @@ button.swiper-pagination-bullet {
     color: #ffffff;
     cursor: pointer; } }
 
+@media (min-width: 992px) {
+  .news__unit:hover .news__subtitle {
+    text-decoration: underline; }
+  .news__unit:hover .news__text {
+    text-decoration: underline; } }
+
 #map {
   filter: grayscale(1);
   -ms-filter: grayscale(1);
@@ -1902,12 +1944,23 @@ button.swiper-pagination-bullet {
 .social {
   padding-bottom: 5px;
   font-size: 0; }
+  .social__link {
+    display: inline-block;
+    width: 26px;
+    height: 26px; }
 
 .insta__link {
-  margin-left: 10px; }
+  margin-left: 10px;
+  background-image: url("../img/footer/icon_instagram_1.png"); }
 
 .vk__link, .odnoklasniki__link {
   margin-left: 10px; }
+
+.vk__link {
+  background-image: url("../img/footer/icon_vk.png"); }
+
+.odnoklasniki__link {
+  background-image: url("../img/footer/icon_odnoklassniki.png"); }
 
 .email__link, .tel__link {
   margin-left: 9px;
@@ -1960,13 +2013,21 @@ button.swiper-pagination-bullet {
       padding-left: 0;
       border: none; } }
 
+@media (max-width: 420px) {
+  .footer__input {
+    width: 95%; } }
+
 @media (max-width: 567px) {
   .address__text {
     font-size: 16px; } }
 
 @media (min-width: 992px) {
-  .social__link:hover {
-    opacity: 0.5; } }
+  .insta__link:hover {
+    background-image: url("../img/footer/icon_instagram.png"); }
+  .vk__link:hover {
+    background-image: url("../img/footer/icon_vk_2.png"); }
+  .odnoklasniki__link:hover {
+    background-image: url("../img/footer/icon_odnoklassniki_4.png"); } }
 
 .modal {
   position: fixed;
@@ -1992,7 +2053,15 @@ button.swiper-pagination-bullet {
     .modal-dialog__close {
       position: absolute;
       top: 0;
-      right: 0; }
+      right: 0;
+      padding: 2px 9px;
+      font-size: 25px;
+      border: none;
+      background-color: transparent; }
+      .modal-dialog__close:active {
+        outline: none; }
+      .modal-dialog__close:focus {
+        outline: none; }
   .modal .thanks__title {
     font-size: 26px;
     text-align: center; }
@@ -2009,7 +2078,9 @@ button.swiper-pagination-bullet {
   .modal__button {
     margin-top: 38px;
     margin-bottom: 35px;
-    font-size: 17px; } }
+    font-size: 17px; }
+  .modal__input {
+    width: 95%; } }
 
 @media (max-width: 350px) {
   .modal__button {
@@ -2017,4 +2088,5 @@ button.swiper-pagination-bullet {
     margin-bottom: 30px;
     padding: 15px; }
   .modal__input {
-    font-size: 15px; } }
+    font-size: 15px;
+    width: 90%; } }
