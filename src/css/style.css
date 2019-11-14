@@ -1404,26 +1404,24 @@ button.swiper-pagination-bullet {
   min-width: 377px;
   min-height: 236px;
   margin-top: 21px; }
-  .tab-wrapper {
-    background-color: #000000; }
   .tab__item-1 {
-    background-image: url("../img/offers/system-heating-installation.jpg");
+    background-image: url("../img/offers/system-heating-installation-darker.jpg");
     background-size: cover; }
   .tab__item-2 {
     background-size: cover;
-    background-image: url("../img/offers/uslugi-santehnika.jpg"); }
+    background-image: url("../img/offers/uslugi-santehnika-darker.jpg"); }
   .tab__item-3 {
     background-size: cover;
-    background-image: url("../img/offers/sewer-equipment-inatallation.jpg"); }
+    background-image: url("../img/offers/sewer-equipment-inatallation-darker.jpg"); }
   .tab__item-4 {
     background-size: cover;
-    background-image: url("../img/offers/system-heating-installation.jpg"); }
+    background-image: url("../img/offers/system-heating-installation-darker.jpg"); }
   .tab__item-5 {
     background-size: cover;
-    background-image: url("../img/offers/uslugi-santehnika.jpg"); }
+    background-image: url("../img/offers/uslugi-santehnika-darker.jpg"); }
   .tab__item-6 {
     background-size: cover;
-    background-image: url("../img/offers/sewer-equipment-inatallation.jpg"); }
+    background-image: url("../img/offers/sewer-equipment-inatallation-darker.jpg"); }
   .tab__title {
     max-width: 300px;
     margin-top: -10px;
@@ -1470,7 +1468,19 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 991px) {
   .button__substrate {
-    display: block; } }
+    display: block; }
+  .tab__item-1 {
+    background-image: url("../img/offers/system-heating-installation.jpg"); }
+  .tab__item-2 {
+    background-image: url("../img/offers/uslugi-santehnika.jpg"); }
+  .tab__item-3 {
+    background-image: url("../img/offers/sewer-equipment-inatallation.jpg"); }
+  .tab__item-4 {
+    background-image: url("../img/offers/system-heating-installation.jpg"); }
+  .tab__item-5 {
+    background-image: url("../img/offers/uslugi-santehnika.jpg"); }
+  .tab__item-6 {
+    background-image: url("../img/offers/sewer-equipment-inatallation.jpg"); } }
 
 @media (max-width: 768px) {
   .offers__section {
@@ -1496,6 +1506,42 @@ button.swiper-pagination-bullet {
       line-height: 20px; } }
 
 @media (min-width: 992px) {
+  .tab__item-1:hover {
+    background-image: url("../img/offers/system-heating-installation-lighter-1.jpg");
+    transition-duration: 0.1s; }
+  .tab__item-1:hover .tab__title {
+    color: #020202;
+    transition-duration: 0.1s; }
+  .tab__item-4:hover {
+    background-image: url("../img/offers/system-heating-installation-lighter-1.jpg");
+    transition-duration: 0.1s; }
+  .tab__item-4:hover .tab__title {
+    color: #020202;
+    transition-duration: 0.1s; }
+  .tab__item-2:hover {
+    background-image: url("../img/offers/uslugi-santehnika-lighter.jpg");
+    transition-duration: 0.1s; }
+  .tab__item-2:hover .tab__title {
+    color: #020202;
+    transition-duration: 0.1s; }
+  .tab__item-5:hover {
+    background-image: url("../img/offers/uslugi-santehnika-lighter.jpg");
+    transition-duration: 0.1s; }
+  .tab__item-5:hover .tab__title {
+    color: #020202;
+    transition-duration: 0.1s; }
+  .tab__item-3:hover {
+    background-image: url("../img/offers/sewer-equipment-inatallation-lighter.jpg");
+    transition-duration: 0.1s; }
+  .tab__item-3:hover .tab__title {
+    color: #020202;
+    transition-duration: 0.1s; }
+  .tab__item-6:hover {
+    background-image: url("../img/offers/sewer-equipment-inatallation-lighter.jpg");
+    transition-duration: 0.1s; }
+  .tab__item-6:hover .tab__title {
+    color: #020202;
+    transition-duration: 0.1s; }
   .tab__button-wrapper:hover .button__substrate {
     display: block; } }
 
@@ -2006,6 +2052,10 @@ button.swiper-pagination-bullet {
     justify-content: space-evenly; }
   .footer__contacts {
     display: block; }
+  .footer__form {
+    position: static;
+    margin: auto;
+    margin-top: 30px; }
   .tel {
     margin-top: 15px; }
     .tel__icon {

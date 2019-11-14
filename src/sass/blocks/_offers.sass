@@ -10,28 +10,25 @@
 	min-width: 377px
 	min-height: 236px
 	margin-top: 21px
-	// filter: grayscale(1)
-	&-wrapper
-		background-color: #000000
 
 	&__item-1
-		background-image: url('../img/offers/system-heating-installation.jpg')
+		background-image: url('../img/offers/system-heating-installation-darker.jpg')
 		background-size: cover
 	&__item-2
 		background-size: cover
-		background-image: url('../img/offers/uslugi-santehnika.jpg')
+		background-image: url('../img/offers/uslugi-santehnika-darker.jpg')
 	&__item-3
 		background-size: cover
-		background-image: url('../img/offers/sewer-equipment-inatallation.jpg')
+		background-image: url('../img/offers/sewer-equipment-inatallation-darker.jpg')
 	&__item-4
 		background-size: cover	
-		background-image: url('../img/offers/system-heating-installation.jpg')
+		background-image: url('../img/offers/system-heating-installation-darker.jpg')
 	&__item-5
 		background-size: cover	
-		background-image: url('../img/offers/uslugi-santehnika.jpg')
+		background-image: url('../img/offers/uslugi-santehnika-darker.jpg')
 	&__item-6
 		background-size: cover	
-		background-image: url('../img/offers/sewer-equipment-inatallation.jpg')
+		background-image: url('../img/offers/sewer-equipment-inatallation-darker.jpg')
 	&__title
 		max-width: 300px
 		margin-top: -10px
@@ -72,13 +69,25 @@
 		min-width: 350px
 		min-height: 219px
 		margin-top: 15px
-		// filter: grayscale(0)
 	.offers
 		&__section	
 			margin-top: 95px
 @media (max-width: 991px)	
 	.button__substrate
-		display: block		
+		display: block	
+	.tab
+		&__item-1
+			background-image: url('../img/offers/system-heating-installation.jpg')
+		&__item-2
+			background-image: url('../img/offers/uslugi-santehnika.jpg')
+		&__item-3
+			background-image: url('../img/offers/sewer-equipment-inatallation.jpg')
+		&__item-4	
+			background-image: url('../img/offers/system-heating-installation.jpg')
+		&__item-5	
+			background-image: url('../img/offers/uslugi-santehnika.jpg')
+		&__item-6	
+			background-image: url('../img/offers/sewer-equipment-inatallation.jpg')		
 @media (max-width: 768px)
 	.offers
 		&__section	
@@ -103,9 +112,42 @@
 		&__title
 			line-height: 20px
 @media (min-width: 992px)
-	// .tab:hover
-	// 	filter: grayscale(0)
-	// 	transition-duration: 0.1s	
+	.tab__item-1:hover
+		background-image: url('../img/offers/system-heating-installation-lighter-1.jpg')
+		transition-duration: 0.1s
+	.tab__item-1:hover .tab__title
+		color: $text-color
+		transition-duration: 0.1s	
+	.tab__item-4:hover
+		background-image: url('../img/offers/system-heating-installation-lighter-1.jpg')
+		transition-duration: 0.1s
+	.tab__item-4:hover .tab__title
+		color: $text-color
+		transition-duration: 0.1s	
+	.tab__item-2:hover
+		background-image: url('../img/offers/uslugi-santehnika-lighter.jpg')	
+		transition-duration: 0.1s
+	.tab__item-2:hover .tab__title
+		color: $text-color
+		transition-duration: 0.1s	
+	.tab__item-5:hover
+		background-image: url('../img/offers/uslugi-santehnika-lighter.jpg')	
+		transition-duration: 0.1s
+	.tab__item-5:hover .tab__title
+		color: $text-color
+		transition-duration: 0.1s
+	.tab__item-3:hover
+		background-image: url('../img/offers/sewer-equipment-inatallation-lighter.jpg')
+		transition-duration: 0.1s	
+	.tab__item-3:hover .tab__title
+		color: $text-color
+		transition-duration: 0.1s						
+	.tab__item-6:hover
+		background-image: url('../img/offers/sewer-equipment-inatallation-lighter.jpg')
+		transition-duration: 0.1s	
+	.tab__item-6:hover .tab__title
+		color: $text-color
+		transition-duration: 0.1s		
 	.tab__button-wrapper:hover .button__substrate
 		display: block
 
