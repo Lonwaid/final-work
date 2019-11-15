@@ -417,6 +417,19 @@ div.invalid {
   border: none;
   color: red; }
 
+.scrollUp__icon {
+  display: block; }
+
+.scrollUp__link {
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 9999;
+  display: inline-block;
+  padding: 10px;
+  background-color: #ffc800;
+  border-radius: 50%; }
+
 @media (max-width: 1200px) {
   .container {
     width: 950px; }
@@ -491,7 +504,9 @@ div.invalid {
   .button:hover {
     background-color: #cca000;
     color: #ffffff;
-    cursor: pointer; } }
+    cursor: pointer; }
+  .scrollUp__link:hover {
+    background-color: #cca000; } }
 
 .animated {
   animation-duration: 1s;

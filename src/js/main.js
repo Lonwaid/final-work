@@ -35,6 +35,9 @@ $(document).ready(function() {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
+	$(".scrollUp").on("click", function () {
+      $('body,html').animate({scrollTop: 0}, 300);
+    });
 	var mySwiper = new Swiper ('.hero__swiper-container', {
 		autoplay: {
       delay: 2500,

@@ -79,6 +79,18 @@ div.invalid
 	font-size: 14px
 	border: none
 	color: red
+.scrollUp
+	&__icon
+		display: block
+	&__link
+		position: fixed
+		right: 30px
+		bottom: 20px
+		z-index: 9999
+		display: inline-block
+		padding: 10px
+		background-color: $main-color
+		border-radius: 50%
 @media (max-width: 1200px)
 	.container
 		width: 950px
@@ -152,6 +164,9 @@ div.invalid
 		background-color: darken( $main-color, 10% )
 		color: #ffffff
 		cursor: pointer
+	.scrollUp__link:hover
+		background-color: darken( $main-color, 10% )
+			
 
 
 
