@@ -38,6 +38,16 @@
 		font-weight: normal
 		text-align: center
 		color: $tab-color
+		&-wrapper
+			position: relative
+			width: 300px
+			// margin-top: -10px
+			// margin-bottom: 25px
+		&_substrate
+			position: absolute
+			top: 0
+			left: 0	
+			color: transparent
 	&__button
 		padding: 8px 20px
 		font-size: 15px
@@ -148,11 +158,12 @@
 	.tab__item-6:hover .tab__title
 		color: $text-color
 		transition-duration: 0.1s		
-	.tab__button-wrapper:hover .button__substrate
+	.tab:hover .button__substrate
 		display: block
-
-
-
+	.tab:hover .tab__title_hidden
+		color: transparent
+	.tab:hover .tab__title_substrate
+		color: $text-color
 
 
 

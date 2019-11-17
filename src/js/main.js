@@ -35,6 +35,13 @@ $(document).ready(function() {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 0) {
+			$(".scrollUp").fadeIn();
+		} else {
+			$(".scrollUp").fadeOut();
+		}
+	});
 	$(".scrollUp").on("click", function () {
       $('body,html').animate({scrollTop: 0}, 300);
     });

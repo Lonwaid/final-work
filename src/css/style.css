@@ -430,6 +430,10 @@ div.invalid {
   background-color: #ffc800;
   border-radius: 50%; }
 
+@media (max-width: 1300px) {
+  .section__title-wrapper {
+    margin: -129px 0 54px -15px; } }
+
 @media (max-width: 1200px) {
   .container {
     width: 950px; }
@@ -1446,6 +1450,14 @@ button.swiper-pagination-bullet {
     font-weight: normal;
     text-align: center;
     color: #fcfafa; }
+    .tab__title-wrapper {
+      position: relative;
+      width: 300px; }
+    .tab__title_substrate {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: transparent; }
   .tab__button {
     padding: 8px 20px;
     font-size: 15px;
@@ -1557,8 +1569,12 @@ button.swiper-pagination-bullet {
   .tab__item-6:hover .tab__title {
     color: #020202;
     transition-duration: 0.1s; }
-  .tab__button-wrapper:hover .button__substrate {
-    display: block; } }
+  .tab:hover .button__substrate {
+    display: block; }
+  .tab:hover .tab__title_hidden {
+    color: transparent; }
+  .tab:hover .tab__title_substrate {
+    color: #020202; } }
 
 .advantages__section {
   margin-top: 145px;
