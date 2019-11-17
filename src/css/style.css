@@ -417,18 +417,21 @@ div.invalid {
   border: none;
   color: red; }
 
-.scrollUp__icon {
-  display: block; }
-
-.scrollUp__link {
-  position: fixed;
-  right: 30px;
-  bottom: 20px;
-  z-index: 9999;
-  display: inline-block;
-  padding: 10px;
-  background-color: #ffc800;
-  border-radius: 50%; }
+.scrollUp {
+  display: none; }
+  .scrollUp_enabled {
+    display: block; }
+  .scrollUp__icon {
+    display: block; }
+  .scrollUp__link {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 9999;
+    display: inline-block;
+    padding: 10px;
+    background-color: #ffc800;
+    border-radius: 50%; }
 
 @media (max-width: 1300px) {
   .section__title-wrapper {

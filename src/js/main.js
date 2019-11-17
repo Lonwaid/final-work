@@ -36,10 +36,13 @@ $(document).ready(function() {
         $('body,html').animate({scrollTop: top}, 500);
     });
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 0) {
-			$(".scrollUp").fadeIn();
+
+		var scrollUp = $(".scrollUp");
+		
+		if ($(this).scrollTop() == 0) {
+			scrollUp.removeClass("scrollUp_enabled");
 		} else {
-			$(".scrollUp").fadeOut();
+			scrollUp.addClass("scrollUp_enabled");
 		}
 	});
 	$(".scrollUp").on("click", function () {
