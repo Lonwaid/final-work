@@ -51,7 +51,7 @@ $(document).ready(function() {
 	var mySwiper = new Swiper ('.hero__swiper-container', {
 		autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
     loop: true,
 		pagination: {
@@ -151,7 +151,7 @@ $(document).ready(function() {
 					url: "mail2.php",
 					data: $(this).serialize(),
 					success: function (response) {
-						console.log('Прибыли данные: ' + response);
+						// console.log('Прибыли данные: ' + response);
 						$('#footer__form')[0].reset();
 						modalThanks.classList.add('modal_active');
 
@@ -161,9 +161,10 @@ $(document).ready(function() {
 					},
 				});
 
-			}	else {
-				console.log('Введите данные');
-			}
+			}	
+			// else {
+			// 	console.log('Введите данные');
+			// }
 	});
 
 	$('#modal__form').on('submit', function name(event) {
@@ -179,7 +180,7 @@ $(document).ready(function() {
 				url: "mail1.php",
 				data: $(this).serialize(),
 				success: function (response) {
-					console.log('Прибыли данные: ' + response);
+					// console.log('Прибыли данные: ' + response);
 					$('#modal__form')[0].reset();
 					modalThanks.classList.add('modal_active');
 					modalForm.classList.remove('modal_active');
@@ -189,8 +190,9 @@ $(document).ready(function() {
 				},
 			});
 
-		}	else {
-			console.log('Введите данные');
-		}
+		}	
+		// else {
+		// 	console.log('Введите данные');
+		// }
 	});
 });

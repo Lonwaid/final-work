@@ -61,10 +61,14 @@
 .tel, .email
 	display: flex
 	align-items: center
+@media (max-width: 1600px)
+	.footer
+		&__form
+			left: 190px	
 @media (max-width: 1200px)
 	.footer
 		&__form
-			left: 110px
+			left: 90px
 @media (max-width: 992px)
 	.footer		
 		&__wrapper
@@ -78,7 +82,9 @@
 		font-size: 18px
 	.footer		
 		&__form
-			left: 10px
+			position: static	
+			margin: auto
+			margin-top: 30px
 @media (max-width: 567px)
 	.footer		
 		&__wrapper
@@ -87,10 +93,6 @@
 			justify-content: space-evenly
 		&__contacts
 			display: block
-		&__form
-			position: static	
-			margin: auto
-			margin-top: 30px
 	.tel
 		margin-top: 15px
 		&__icon
@@ -107,8 +109,6 @@
 		&__text
 			font-size: 16px	
 @media (min-width: 992px)						
-	// .social__link:hover
-	// 	opacity: 0.5
 	.insta__link:hover
 		background-image: url('../img/footer/icon_instagram.png')
 	.vk__link:hover
