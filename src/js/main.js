@@ -78,15 +78,56 @@ $(document).ready(function() {
 			clickable: true,
 		},
 	});
-	var reviews = $('.section__news');
-	var reviewsTop = reviews.offset().top;
-	$(window).bind('scroll', function () {
-		var windowTop = $(this).scrollTop();
-		if (windowTop > reviewsTop) {
-			$('#map').html('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d947.7596356944331!2d37.20127076998803!3d55.59914190404965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b556e8ba6e1b69%3A0x4d7d28a0763eecc5!2z0KHQvtCy0LXRgtGB0LrQsNGPINGD0LsuLCA0OCwg0JzQsNGA0YPRiNC60LjQvdC-LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDE0MzM1MA!5e0!3m2!1sru!2sby!4v1572194966744!5m2!1sru!2sby" width="100%" height="666" frameborder="0" style="border:0;" allowfullscreen=""></iframe>');
-			$(window).unbind('scroll');
-		}
-	});
+	// var reviews = $('.section__news');
+	// var reviewsTop = reviews.offset().top;
+	// $(window).bind('scroll', function () {
+	// 	var windowTop = $(this).scrollTop();
+	// 	if (windowTop > reviewsTop) {
+	// 		$('#map').html('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d947.7596356944331!2d37.20127076998803!3d55.59914190404965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b556e8ba6e1b69%3A0x4d7d28a0763eecc5!2z0KHQvtCy0LXRgtGB0LrQsNGPINGD0LsuLCA0OCwg0JzQsNGA0YPRiNC60LjQvdC-LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDE0MzM1MA!5e0!3m2!1sru!2sby!4v1572194966744!5m2!1sru!2sby" width="100%" height="666" frameborder="0" style="border:0;" allowfullscreen=""></iframe>');
+	// 		$(window).unbind('scroll');
+	// 	}
+	// });
+	ymaps.ready(function () {
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            center: [55.59876346, 37.19939631],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 17
+        });
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            // '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+        myPlacemark = new ymaps.Placemark([55.59871486, 37.20161718], {
+            hintContent: 'г. Москва, ул. Советская 48 корп. 3',
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: '../img/footer/icon_map-placeholder.png',
+            // Размеры метки.
+            iconImageSize: [46, 66],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -48]
+        });
+        myMap.geoObjects
+        .add(myPlacemark);
+        myMap.events.add('boundschange', function() {
+			    if (window.innerWidth < 769) {
+			      myMap.setCenter([55.59871486, 37.20161718]);
+			    }
+			  }); 
+			  myMap.events.add('boundschange', function() {
+			    if (window.innerWidth >= 769) {
+			      myMap.setCenter([55.59876346, 37.19939631]);
+			    }
+			  }); 
+        myMap.behaviors.disable(['scrollZoom']);
+  });    	
 	$('#footer__form').validate({
 		rules: {
 			username: {
